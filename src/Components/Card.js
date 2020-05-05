@@ -3,7 +3,7 @@ import styled from 'styled-components/macro'
 
 const Container = styled.article`
   width: 250px;
-  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0,0,0,.12);
+  margin: 10px 10px;
 `
 
 const CoverImage = styled.img`
@@ -11,24 +11,47 @@ const CoverImage = styled.img`
 `
 
 const Content = styled.div`
-  padding: 20px;
 `
 
-const Description = styled.p`
+const Description = styled.div`
 `
 
 const Title = styled.h3`
+  display: inline;
+  font-size: 17px;
 `
 
-export const Card = ({ coverImage, title, intro }) => {
+const Intro = styled.p`
+  display: inline;
+  font-size: 17px;
+`
+
+const Tags = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`
+
+const Tag = styled.p`
+  margin: 4px 4px 0 0;
+  padding: 4px 8px;
+  background: #f3d4d4;
+  font-size: 9px;
+`
+
+export const Card = ({ coverImage, title, intro, arr }) => {
   return (
     <Container>
       <CoverImage src={coverImage} />
       <Content>
         <Description>
           <Title>{title}</Title>
-          {intro}
+          <Intro>{intro}</Intro>
         </Description>
+        <Tags>
+          {arr.map((item, index) => (
+            <Tag key={index} item={item}>{item}</Tag>
+          ))}
+        </Tags>
       </Content>
     </Container>
   )
