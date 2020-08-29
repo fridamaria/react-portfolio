@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components/macro'
 
 const Container = styled.article`
-  width: 250px;
-  margin: 10px 10px;
+  width: 100%;
+  margin: 10px 0px;
 `
 
 const CoverImage = styled.img`
