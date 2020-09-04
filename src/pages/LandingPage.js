@@ -44,7 +44,7 @@ export const LandingPage = () => {
         Project Manager turned Frontend Developer
         <Button title="About me" />
       </Section>
-      <Section background="#f1f1f3">
+      <Section>
         <SectionTitle>Tech</SectionTitle>
         <Tech />
       </Section>
@@ -52,19 +52,13 @@ export const LandingPage = () => {
         <SectionTitle>Portfolio Highlights</SectionTitle>
         <Projects />
       </Section>
-      <Section background="#f6decb">
-        Tech highlights
-        <Button title="More skills" />
+      <Section>
+        <SectionTitle>Thoughts on tech</SectionTitle>
+        <Button title="More thoughts" />
       </Section>
-      <Section background="#ecc7cf">
-        Thoughts on tech
-        <Button title="Test" />
+      <Section background="#e0e8e4">
+        <SectionTitle>Contact</SectionTitle>
       </Section>
-      <Section background="#d7cec3">
-        More
-        <Button title="Test" />
-      </Section>
-      <Section background="#c4d3e5">Contact</Section>
     </Container>
   )
 }
