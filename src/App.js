@@ -1,10 +1,8 @@
 import React from 'react'
 import styled from 'styled-components/macro'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import { LandingPage } from './pages/LandingPage'
-import { Card } from 'components/Card'
-import movieImg from './Media/movie-project.png'
 import { Header } from 'components/Header'
+import { LandingPage } from './pages/LandingPage'
 
 const PrimaryContainer = styled.section`
   display: flex;

@@ -3,6 +3,8 @@ import styled from 'styled-components/macro'
 
 const StyledButton = styled.button`
   display: block;
+  width: 90%;
+  max-width: 500px;
   margin-top: 15px;
   padding: 8px 14px;
   border: 1px solid ${(props) => (props.border || '#000')};
