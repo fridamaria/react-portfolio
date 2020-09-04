@@ -8,6 +8,7 @@ import Productive from '../media/B-Productive.png'
 const ProjectContainer = styled.section`
   display: grid;
   grid-template-columns: repeat(1fr);
+  grid-row-gap: 25px;
   justify-items: center;
   height: 100%;
 
