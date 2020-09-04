@@ -5,7 +5,7 @@ const StyledButton = styled.button`
   display: block;
   width: 90%;
   max-width: 500px;
-  margin-top: 15px;
+  margin: 15px 0;
   padding: 8px 14px;
   border: 1px solid ${(props) => (props.border || '#000')};
   background: ${(props) => (props.background || 'none')};

@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components/macro'
 import { Button } from 'lib/Button'
 import { Projects } from 'components/Projects'
+import { Tech } from 'components/Tech'
 
 const Container = styled.div`
   display: grid;
@@ -42,6 +43,10 @@ export const LandingPage = () => {
         <Symbols>&#60; &#47; &#62;</Symbols>
         Project Manager turned Frontend Developer
         <Button title="About me" />
+      </Section>
+      <Section background="#f1f1f3">
+        <SectionTitle>Tech</SectionTitle>
+        <Tech />
       </Section>
       <Section background="#e0e8e4">
         <SectionTitle>Portfolio Highlights</SectionTitle>
