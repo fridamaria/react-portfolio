@@ -3,6 +3,7 @@ import styled from 'styled-components/macro'
 import { Button } from 'lib/Button'
 import { Projects } from 'components/Projects'
 import { Tech } from 'components/Tech'
+import { Thoughts } from 'components/Thoughts'
 
 const Container = styled.div`
   display: grid;
@@ -54,7 +55,7 @@ export const LandingPage = () => {
       </Section>
       <Section>
         <SectionTitle>Thoughts on tech</SectionTitle>
-        <Button title="More thoughts" />
+        <Thoughts />
       </Section>
       <Section background="#e0e8e4">
         <SectionTitle>Contact</SectionTitle>
